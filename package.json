@@ -1,0 +1,14 @@
+{
+    "name": "photo-album",
+    "version": "1.0.0",
+    "description": "A responsive one-page photo album",
+    "main": "app.js",
+    "scripts": {
+      "start": "node app.js"
+    },
+    "dependencies": {
+      "express": "^4.18.2",
+      "pug": "^3.0.2"
+    }
+  }
+  
