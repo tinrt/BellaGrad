@@ -6,18 +6,18 @@ app.set('view engine', 'pug');
 app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Explicit image list from your folder
 const images = [
-  "/images/20220518154718_IMG_5042.jpg",
-  "/images/baby-goat.jpg",
-  "/images/blog_goaT-1024x571.jpg",
-  "/images/goat_right_aligned.jpg",
-  "/images/Goat-face-close-up.jpg",
-  "/images/Hausziege_04.jpg",
-  "/images/images (1).jpg",
-  "/images/images (2).jpg",
-  "/images/images (3).jpg",
-  "/images/images.jpg"
+  "/images/DSC01516.jpg",
+  "/images/DSC01529.jpg",
+  "/images/DSC01583.jpg",
+  "/images/DSC01610.jpg",
+  "/images/DSC01614.jpg",
+  "/images/DSC01635.jpg",
+  "/images/DSC01728.jpg",
+  "/images/DSC01743.jpg",
+  "/images/DSC01766.jpg",
+  "/images/DSC01826.jpg",
+  "/images/DSC01624.jpg"
 ];
 
 app.get('/', (req, res) => {
