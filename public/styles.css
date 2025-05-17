@@ -1,57 +1,96 @@
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  html, body {
-    width: 100%;
-    min-height: 100vh;
-    background: black;
-    overflow-x: hidden;
-    overflow-y: auto;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100vh;
+  background: black;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.album-grid {
+  column-count: 3;
+  column-gap: 2px;
+  width: 100%;
+  padding: 2px;
+}
+
+@media (max-width: 768px) {
   .album-grid {
-    column-count: 3;
-    column-gap: 2px;
-    width: 100%;
-    padding: 2px;
+    column-count: 2;
+  }
+}
+
+@media (max-width: 480px) {
+  .album-grid {
+    column-count: 1;
+  }
+}
+
+.album-img {
+  width: 100%;
+  margin-bottom: 2px;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.2s ease;
+}
+
+.album-img:hover {
+  transform: scale(1.02);
+}
+
+.note-block {
+  background: black;
+  color: white;
+  font-family: 'Great Vibes', cursive;
+  font-size: 2em;
+  text-align: center;
+  width: 100%;
+  break-inside: avoid;
+  margin-bottom: 2px;
+}
+
+.modal-body {
+  padding: 0;
+  background: black;
+  text-align: center;
+}
+
+#modal-img {
+  max-height: 90vh;
+  width: auto;
+  object-fit: contain;
+}
+
+@font-face {
+    font-family: 'Lovely Pretty Font';
+    src: url('/fonts/lovely-pretty-font.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
   }
   
-  @media (max-width: 768px) {
-    .album-grid {
-      column-count: 2;
-    }
-  }
-  @media (max-width: 480px) {
-    .album-grid {
-      column-count: 1;
-    }
-  }
-  
-  .album-img {
-    width: 100%;
-    margin-bottom: 2px;
-    display: block;
-    object-fit: cover;
-    transition: transform 0.2s ease;
-  }
-  
-  .album-img:hover {
-    transform: scale(1.02);
-  }
-  
-  /* Modal Styling */
-  .modal-body {
-    padding: 0;
+  .note-block {
+    font-family: 'Lovely Pretty Font', cursive;
+    font-size: clamp(2rem, 5vw, 8em);
     background: black;
+    color: white;
     text-align: center;
+    padding: 0.5rem;
+    margin-top: 2rem;
   }
-  
-  #modal-img {
-    max-height: 90vh;
-    width: auto;
-    object-fit: contain;
+
+  .note-block1 {
+    font-family: 'Lovely Pretty Font', cursive;
+    font-size: clamp(2rem, 5vw, 4em);
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+    margin-top: 4rem;
   }
   
